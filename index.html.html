@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Harsh ❤️ Kirti | Roka Ceremony</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="invitation.css">
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="flowers">
+    <span style="left:10%">🌸</span>
+    <span style="left:30%;animation-delay:2s">🌸</span>
+    <span style="left:50%;animation-delay:4s">🌸</span>
+    <span style="left:70%;animation-delay:1s">🌸</span>
+    <span style="left:90%;animation-delay:3s">🌸</span>
+  </div>
+
+  <!-- PAGE 1 -->
+  <div id="page1" class="page">
+    <h1>💍 Welcome 💍</h1>
+    <h2>Royal Roka Ceremony Invitation</h2>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div id="page2" class="page hidden">
+    <h2 style="font-size:28px;color:gold">Special Message</h2>
+
+    <p style="max-width:420px;font-size:20px;margin-top:20px">
+      Khushiyon ka ek naya safar shuru hone ja raha hai,<br>
+      Do dilon ka rishta aur gehra hone ja raha hai.  <br><br>
+      Hamari <b>Masi/Bua ke Roka Ceremony</b> mein<br>
+      aapka aana zaroori hai,<br>
+      Aapke bina yeh khushi adhuri hai ❤️
+    </p>
+
+    <button onclick="nextPage()">View Invitation</button>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div id="page3" class="page hidden">
+    <div class="card">
+      <h2 class="gold">Harsh ❤️ Kirti</h2>
+      <p style="margin:10px 0">Roka Ceremony</p>
+
+      <p>
+        📅 <b>Date</b><br>
+        14 April 2026
+      </p>
+
+      <p>
+        ⏰ <b>Time</b><br>
+        5:30 PM
+      </p>
+
+      <p>
+        📍 <b>Venue</b><br>
+        Banquet 186<br>
+        Karkarduma<br>
+        Near Kotak Mahindra Bank<br>
+        Delhi
+      </p>
+
+      <p class="gold">Contact</p>
+
+      <a class="call" href="tel:9319227970">Call 1</a>
+      <a class="call" href="tel:7836830959">Call 2</a>
+      <a class="call" href="tel:9250978412">Call 3</a>
+      <br>
+      <a class="whatsapp" href="https://wa.me/919319227970" target="_blank">WhatsApp</a>
+      <a class="location"
+         href="https://maps.google.com/?q=Banquet+186+Karkarduma+Delhi"
+         target="_blank">Live Location</a>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(()=>{
+      document.getElementById("page1").classList.add("hidden");
+      document.getElementById("page2").classList.remove("hidden");
+    },3000);
+
+    function nextPage(){
+      document.getElementById("page2").classList.add("hidden");
+      document.getElementById("page3").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
